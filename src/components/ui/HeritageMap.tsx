@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import mapmar from '../../assets/images/mapmar.jpg'; 
 // Heritage site data
 interface HeritageSite {
   id: number;
@@ -15,37 +15,37 @@ const heritageSites: HeritageSite[] = [
   {
     id: 1,
     name: 'Mosquée Hassan II',
-    image: 'https://images.pexels.com/photos/13458334/pexels-photo-13458334.jpeg',
+    image: 'https://images.pexels.com/photos/2404046/pexels-photo-2404046.jpeg',
     description: 'Située à Casablanca, c\'est la plus grande mosquée du Maroc et la 5ème plus grande au monde.',
     location: 'Casablanca',
-    latitude: 33.6083,
-    longitude: -7.6383
+    latitude: 32.6083,
+    longitude: -8.05
   },
   {
     id: 2,
     name: 'Médina de Fès',
-    image: 'https://images.pexels.com/photos/4344870/pexels-photo-4344870.jpeg',
+    image: 'https://images.pexels.com/photos/31732400/pexels-photo-31732400/free-photo-of-traditional-leather-tannery-in-fes-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description: 'Fondée au 9ème siècle, c\'est l\'une des médinas les plus grandes et les mieux préservées du monde arabe.',
     location: 'Fès',
-    latitude: 34.0657,
-    longitude: -4.9773
+    latitude: 32.98083,
+    longitude: -7
   },
   {
     id: 3,
     name: 'Ksar d\'Aït-Ben-Haddou',
-    image: 'https://images.pexels.com/photos/4216244/pexels-photo-4216244.jpeg',
+    image: 'https://images.pexels.com/photos/2347774/pexels-photo-2347774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description: 'Un exemple frappant d\'architecture du sud marocain, inscrit au patrimoine mondial de l\'UNESCO.',
     location: 'Ouarzazate',
-    latitude: 31.0470,
-    longitude: -7.1281
+    latitude: 30.5470,
+    longitude: -7.8281
   },
   {
     id: 4,
-    name: 'Jardin Majorelle',
-    image: 'https://images.pexels.com/photos/4913751/pexels-photo-4913751.jpeg',
+    name: 'Jamaa el-Fna',
+    image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317/free-photo-of-bazaar-in-city-in-evening.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description: 'Un jardin botanique enchanteur créé par le peintre français Jacques Majorelle, plus tard acquis par Yves Saint Laurent.',
     location: 'Marrakech',
-    latitude: 31.6412,
+    latitude: 31.112,
     longitude: -8.0027
   }
 ];
@@ -61,8 +61,10 @@ const HeritageMap: React.FC = () => {
           <h3 className="text-xl font-serif font-bold mb-4">Carte du patrimoine</h3>
           <div className="flex-grow relative bg-slate-200 rounded-lg overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-slate-500">Carte interactive du Maroc</p>
-              <img src="" > </img>
+            <img src="dist\assets\images\mapmar.jpg" alt="Map" />
+
+
+              
               {/* This is a placeholder for the actual map implementation */}
               {/* In a real implementation, we would use a mapping library like Leaflet or Google Maps */}
             </div>
@@ -111,13 +113,13 @@ const HeritageMap: React.FC = () => {
         <div className="p-6">
           {selectedSite ? (
             <div className="animate-fadeIn">
-              <div className="rounded-lg overflow-hidden h-48 mb-4">
-                <img 
-                  src={selectedSite.image} 
-                  alt={selectedSite.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+             <div className="rounded-lg overflow-hidden mb-4">
+                  <img 
+                       src={selectedSite.image} 
+                       alt={selectedSite.name}
+                         className="object-cover w-[700px] h-[400px] mx-auto" // Example: Set width and height
+                          />
+                  </div>
               
               <h3 className="text-xl font-serif font-bold mb-2">{selectedSite.name}</h3>
               <p className="text-majorelle-blue font-medium mb-3">{selectedSite.location}</p>

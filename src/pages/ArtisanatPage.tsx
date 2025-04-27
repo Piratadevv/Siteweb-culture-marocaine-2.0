@@ -12,12 +12,12 @@ const craftCategories = [
       {
         name: 'Poterie de Safi',
         description: 'Safi est réputée pour sa céramique bleue et blanche, inspirée des traditions portugaises et espagnoles.',
-        image: 'https://images.pexels.com/photos/1493720/pexels-photo-1493720.jpeg'
+        image: 'https://plus.unsplash.com/premium_photo-1679811672112-dfe811796cf9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         name: 'Céramique de Fès',
         description: 'Caractérisée par ses motifs bleus sur fond blanc, la céramique de Fès est emblématique de l\'artisanat marocain.',
-        image: 'https://images.pexels.com/photos/1327395/pexels-photo-1327395.jpeg'
+        image: 'https://images.unsplash.com/photo-1719852255246-898f965e04e4?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       }
     ]
   },
@@ -25,17 +25,17 @@ const craftCategories = [
     id: 'textiles',
     name: 'Textiles et Tapis',
     description: 'Les tapis marocains racontent des histoires à travers leurs motifs, symboles et techniques de tissage.',
-    image: 'https://images.pexels.com/photos/10832432/pexels-photo-10832432.jpeg',
+    image: 'https://images.pexels.com/photos/15829237/pexels-photo-15829237/free-photo-of-street-stall-with-carpets.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     items: [
       {
         name: 'Tapis berbères',
         description: 'Les tapis berbères sont reconnaissables à leurs motifs géométriques et leurs couleurs naturelles.',
-        image: 'https://images.pexels.com/photos/4946964/pexels-photo-4946964.jpeg'
+        image: 'https://plus.unsplash.com/premium_photo-1725572259393-11b98c82dcc0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         name: 'Tissage de Chefchaouen',
         description: 'La ville bleue est connue pour ses tissages colorés, souvent réalisés avec des techniques ancestrales.',
-        image: 'https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg'
+        image: 'https://images.unsplash.com/photo-1616089180418-56172f6c3c2b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       }
     ]
   },
@@ -43,17 +43,17 @@ const craftCategories = [
     id: 'metal',
     name: 'Travail du Métal',
     description: 'De la ciselure à la dinanderie, les artisans marocains transforment le métal en véritables œuvres d\'art.',
-    image: 'https://images.pexels.com/photos/5410140/pexels-photo-5410140.jpeg',
+    image: 'https://images.unsplash.com/photo-1654076847645-b72b3b66d576?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     items: [
       {
         name: 'Lanternes marocaines',
         description: 'Ces lanternes en métal ajouré créent des jeux d\'ombre et de lumière caractéristiques.',
-        image: 'https://images.pexels.com/photos/5529596/pexels-photo-5529596.jpeg'
+        image: 'https://images.unsplash.com/photo-1571139318801-2456d345c6f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         name: 'Théières en cuivre',
         description: 'Symbole d\'hospitalité, les théières marocaines sont souvent finement ciselées et décorées.',
-        image: 'https://images.pexels.com/photos/5529549/pexels-photo-5529549.jpeg'
+        image: 'https://images.pexels.com/photos/31094855/pexels-photo-31094855/free-photo-of-intricate-brass-teapot-with-arabic-calligraphy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
       }
     ]
   }
@@ -66,7 +66,7 @@ const ArtisanatPage: React.FC = () => {
       <section 
         className="py-20 bg-cover bg-center relative"
         style={{ 
-          backgroundImage: 'url(https://images.pexels.com/photos/1327395/pexels-photo-1327395.jpeg)'
+          backgroundImage: 'url(https://images.unsplash.com/photo-1721508490084-1b1de5b230d4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -162,13 +162,13 @@ const ArtisanatPage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/6462682/pexels-photo-6462682.jpeg" 
+                  src="https://poterieserghini.com/storage/2023/04/SN_Serghini-Safi-0106-1024x684.jpg" 
                   alt="Artisan potier"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-serif font-bold mb-2">Mohammed</h3>
+                <h3 className="text-xl font-serif font-bold mb-2">Moulay Ahmed Serghini</h3>
                 <p className="text-majorelle-blue font-medium mb-4">Maître potier à Safi</p>
                 <p className="text-gray-600">
                   "Je pratique cet art depuis 40 ans, comme mon père et mon grand-père avant moi. Chaque pièce raconte une histoire de notre culture."
@@ -179,7 +179,7 @@ const ArtisanatPage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/3837517/pexels-photo-3837517.jpeg" 
+                  src="https://tissusetartisansdumonde.fr/wp-content/uploads/2011/11/fatima-tisserande-berbere.jpg" 
                   alt="Tisseuse de tapis"
                   className="w-full h-full object-cover"
                 />
@@ -196,7 +196,7 @@ const ArtisanatPage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/3761508/pexels-photo-3761508.jpeg" 
+                  src="https://plus.unsplash.com/premium_photo-1677700375023-536d895b4080?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                   alt="Artisan du cuir"
                   className="w-full h-full object-cover"
                 />

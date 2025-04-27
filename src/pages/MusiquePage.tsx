@@ -13,6 +13,8 @@ const MusiquePage: React.FC = () => {
             Les instruments de musique traditionnels sont au cœur de notre patrimoine culturel.
             Ils témoignent d'un savoir-faire artisanal et d'une richesse sonore transmise de génération en génération.
           </p>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Medina_guitars%2C_Marrakesh%2C_Morocco.jpg" alt="Instruments de musique" className="w-full  h-[400px] object-cover rounded-lg mb-4" />
           <div className="bg-amber-50 p-4 rounded-md">
             <p className="italic text-amber-900">
               "La musique traditionnelle est la voix de notre passé qui continue à résonner dans le présent."
@@ -42,10 +44,12 @@ const MusiquePage: React.FC = () => {
           </p>
           <div className="grid gap-4 mt-4">
             <div className="border-l-4 border-amber-600 pl-4">
-              <h4 className="font-medium text-lg">Festival des Mélodies Ancestrales</h4>
+              <img src="https://static.latribune.fr/full_width/1005943/ceremonie-ouverture-gnaoua-festival.jpg" alt="Festival Gnaoua" className="w-full w-[500px] h-[200px] object-cover rounded-lg mb-2" />
+              <h4 className="font-medium text-lg">le Festival Gnaoua</h4>
               <p className="text-gray-600">Juin - Place du village</p>
             </div>
             <div className="border-l-4 border-amber-600 pl-4">
+            <img src="https://www.vh.ma/wp-content/uploads/2025/02/Musique-Andalouse.jpg" alt="Festival Gnaoua" className="w-full w-[500px] h-[200px] object-cover rounded-lg mb-2" />
               <h4 className="font-medium text-lg">Nuits des Traditions Musicales</h4>
               <p className="text-gray-600">Août - Théâtre en plein air</p>
             </div>

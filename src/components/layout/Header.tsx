@@ -53,44 +53,44 @@ const Header = () => {
             to="/" 
             className="flex items-center"
           >
-            <span className={`text-2xl font-serif font-bold ${scrolled ? 'text-majorelle-blue' : 'text-white'}`}>
+            <span className={`text-2xl font-serif font-bold ${scrolled ? 'text-majorelle-blue' : 'text-gray-600'}`}>
               Trésors du Maroc
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className={`${scrolled ? 'text-slate-800' : 'text-white'} hover:text-terracotta transition-colors`}>
+            <Link to="/" className={`${scrolled ? 'text-slate-800' : 'text-gray-600'} hover:text-terracotta transition-colors`}>
               {t('nav.home')}
             </Link>
-            <Link to="/artisanat" className={`${scrolled ? 'text-slate-800' : 'text-white'} hover:text-terracotta transition-colors`}>
+            <Link to="/artisanat" className={`${scrolled ? 'text-slate-800' : 'text-gray-600'} hover:text-terracotta transition-colors`}>
               {t('nav.artisanat')}
             </Link>
-            <Link to="/musique" className={`${scrolled ? 'text-slate-800' : 'text-white'} hover:text-terracotta transition-colors`}>
+            <Link to="/musique" className={`${scrolled ? 'text-slate-800' : 'text-gray-600'} hover:text-terracotta transition-colors`}>
               {t('nav.musique')}
             </Link>
-            <Link to="/gastronomie" className={`${scrolled ? 'text-slate-800' : 'text-white'} hover:text-terracotta transition-colors`}>
+            <Link to="/gastronomie" className={`${scrolled ? 'text-slate-800' : 'text-gray-600'} hover:text-terracotta transition-colors`}>
               {t('nav.gastronomie')}
             </Link>
-            <Link to="/patrimoine" className={`${scrolled ? 'text-slate-800' : 'text-white'} hover:text-terracotta transition-colors`}>
+            <Link to="/patrimoine" className={`${scrolled ? 'text-slate-800' : 'text-gray-600'} hover:text-terracotta transition-colors`}>
               {t('nav.patrimoine')}
             </Link>
-            <Link to="/galerie" className={`${scrolled ? 'text-slate-800' : 'text-white'} hover:text-terracotta transition-colors`}>
+            <Link to="/galerie" className={`${scrolled ? 'text-slate-800' : 'text-gray-600'} hover:text-terracotta transition-colors`}>
               {t('nav.gallery')}
             </Link>
-            <Link to="/contact" className={`${scrolled ? 'text-slate-800' : 'text-white'} hover:text-terracotta transition-colors`}>
+            <Link to="/contact" className={`${scrolled ? 'text-slate-800' : 'text-gray-600'} hover:text-terracotta transition-colors`}>
               {t('nav.contact')}
             </Link>
           </nav>
 
           {/* Language Selector */}
           <div className="hidden md:flex items-center space-x-2">
-            <Globe className={`w-5 h-5 ${scrolled ? 'text-slate-800' : 'text-white'}`} />
+            <Globe className={`w-5 h-5 ${scrolled ? 'text-slate-800' : 'text-gray-600'}`} />
             <select 
               value={language}
               onChange={(e) => setLanguage(e.target.value as Language)}
               className="bg-transparent border-none focus:outline-none cursor-pointer"
-              style={{ color: scrolled ? '#1F2937' : 'white' }}
+              style={{ color: scrolled ? '#1F2937' : 'gray-500' }}
             >
               {languages.map((lang) => (
                 <option 
@@ -111,9 +111,9 @@ const Header = () => {
             aria-label="Toggle menu"
           >
             {isOpen ? (
-              <X className={`w-6 h-6 ${scrolled ? 'text-slate-800' : 'text-white'}`} />
+              <X className={`w-6 h-6 ${scrolled ? 'text-slate-800' : 'text-gray-600'}`} />
             ) : (
-              <Menu className={`w-6 h-6 ${scrolled ? 'text-slate-800' : 'text-white'}`} />
+              <Menu className={`w-6 h-6 ${scrolled ? 'text-slate-800' : 'text-gray-600'}`} />
             )}
           </button>
         </div>

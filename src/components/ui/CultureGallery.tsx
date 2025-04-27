@@ -58,54 +58,6 @@ const galleryItems: GalleryItem[] = [
     image: 'https://images.pexels.com/photos/4344786/pexels-photo-4344786.jpeg',
     type: 'heritage'
   }
-  ,{
-    id: 9,
-    title: 'Poterie traditionnelle de Safi',
-    image: 'https://images.pexels.com/photos/2162938/pexels-photo-2162938.jpeg',
-    type: 'art'
-  },
-  {
-    id: 10,
-    title: 'Musiciens Gnaoua',
-    image: 'https://images.pexels.com/photos/3810817/pexels-photo-3810817.jpeg',
-    type: 'music'
-  },
-  {
-    id: 11,
-    title: 'Tajine marocain',
-    image: 'https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg',
-    type: 'food'
-  },
-  {
-    id: 12,
-    title: 'Médina de Chefchaouen',
-    image: 'https://images.pexels.com/photos/4388164/pexels-photo-4388164.jpeg',
-    type: 'heritage'
-  },
-  {
-    id: 13,
-    title: 'Tapis berbère',
-    image: 'https://images.pexels.com/photos/10832432/pexels-photo-10832432.jpeg',
-    type: 'art'
-  },
-  {
-    id: 14,
-    title: 'Danse Ahidous',
-    image: 'https://images.pexels.com/photos/1154190/pexels-photo-1154190.jpeg',
-    type: 'music'
-  },
-  {
-    id: 15,
-    title: 'Pâtisseries marocaines',
-    image: 'https://images.pexels.com/photos/4193830/pexels-photo-4193830.jpeg',
-    type: 'food'
-  },
-  {
-    id: 16,
-    title: 'Kasbah des Oudayas',
-    image: 'https://images.pexels.com/photos/4344786/pexels-photo-4344786.jpeg',
-    type: 'heritage'
-  }
 ];
 
 const CultureGallery: React.FC = () => {
@@ -182,8 +134,8 @@ const CultureGallery: React.FC = () => {
           >
             <div className="aspect-square overflow-hidden">
               <img 
-                src={item.image} 
-                alt={item.title}
+                src={item.image || 'default-image.jpg'} 
+                alt={item.title || 'Default Title'}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
@@ -213,12 +165,12 @@ const CultureGallery: React.FC = () => {
             
             <div className="bg-white rounded-lg overflow-hidden shadow-xl">
               <img 
-                src={selectedItem.image} 
-                alt={selectedItem.title}
+                src={selectedItem?.image || 'default-image.jpg'} 
+                alt={selectedItem?.title || 'Default Title'}
                 className="w-full max-h-[70vh] object-contain"
               />
               <div className="p-4">
-                <h3 className="text-xl font-serif font-bold">{selectedItem.title}</h3>
+                <h3 className="text-xl font-serif font-bold">{selectedItem?.title}</h3>
               </div>
             </div>
           </div>
