@@ -156,7 +156,17 @@ const ContactPage: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="h-[400px] bg-slate-200 rounded-lg relative flex items-center justify-center">
             <p className="text-slate-500">Carte interactive</p>
-            {/* This is a placeholder for an actual map */}
+            <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21303051.708749257!2d-17.50471495463685!3d31.50849016735607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda739a4cfaa9937%3A0xf5ca0b1a2c90ed1f!2sMorocco!5e0!3m2!1sen!2sma!4v1681349090647!5m2!1sen!2sma"
+    width="600"
+    height="450"
+    style={{ border: 0 }}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    loading="lazy"
+    title="Google Maps"
+    className="absolute inset-0 w-full h-full rounded-lg"
+    ></iframe>
+  
           </div>
         </div>
       </section>

@@ -9,7 +9,7 @@ const PatrimoinePage: React.FC = () => {
       <section 
         className="py-20 bg-cover bg-center relative"
         style={{ 
-          backgroundImage: 'url(https://images.pexels.com/photos/4344786/pexels-photo-4344786.jpeg)'
+          backgroundImage: 'url(https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -69,21 +69,20 @@ const PatrimoinePage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-64">
                 <img 
-                  src="https://images.pexels.com/photos/13458334/pexels-photo-13458334.jpeg"
-                  alt="Mosquée Hassan II"
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/61/d3/5a/agadir-oufella-at-sunset.jpg?w=1400&h=-1&s=1"
+                  alt="Kasbah d'Agadir Oufella"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-serif font-bold mb-2">Mosquée Hassan II</h3>
+                <h3 className="text-xl font-serif font-bold mb-2">Kasbah d'Agadir Oufella</h3>
                 <p className="text-gray-600 mb-4">
-                  Chef-d'œuvre de l'architecture moderne marocaine, la mosquée Hassan II de Casablanca 
-                  est la plus grande mosquée d'Afrique et la 5e plus grande au monde.
+                Forteresse historique surplombant la ville, la Kasbah d'Agadir Oufella offre un témoignage poignant de l'histoire et de la résilience d'Agadir.
                 </p>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Construction achevée en 1993</li>
-                  <li>• Capacité de 25 000 fidèles</li>
-                  <li>• Minaret de 210 mètres de hauteur</li>
+                  <li>• Édifiée au XVIe siècle par le sultan saadien Mohammed ech-Cheikh pour surveiller les installations portugaises</li>
+                  <li>• Située à 236 mètres d'altitude, offrant une vue panoramique sur la baie d'Agadir</li>
+                  <li>• Partiellement détruite en 1960 lors du séisme d'Agadir, puis restaurée récemment pour accueillir les visiteurs</li>
                 </ul>
               </div>
             </div>
@@ -91,21 +90,20 @@ const PatrimoinePage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-64">
                 <img 
-                  src="https://images.pexels.com/photos/4344870/pexels-photo-4344870.jpeg"
-                  alt="Médina de Fès"
+                  src="https://www.ootravels.com/wp-content/uploads/2024/02/Visiter-Merzouga-et-lErg-Chebbi-Les-dunes-de-Merzouga_00.jpg"
+                  alt="Les Dunes de Merzouga – Erg Chebbi"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-serif font-bold mb-2">Médina de Fès</h3>
+                <h3 className="text-xl font-serif font-bold mb-2">Les Dunes de Merzouga – Erg Chebbi</h3>
                 <p className="text-gray-600 mb-4">
-                  Plus grande médina piétonne au monde, la médina de Fès est un labyrinthe vivant 
-                  de ruelles, souks et monuments historiques.
+                Paysages majestueux du désert marocain, Merzouga est célèbre pour ses immenses dunes dorées et ses couchers de soleil spectaculaires.
                 </p>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Fondée au IXe siècle</li>
-                  <li>• Plus de 9000 ruelles</li>
-                  <li>• Classée au patrimoine mondial de l'UNESCO</li>
+                  <li>• Dunes atteignant 150 mètres de hauteur</li>
+                  <li>• Balades à dos de dromadaire au lever ou coucher du soleil</li>
+                  <li>• Camps berbères traditionnels sous les étoiles</li>
                 </ul>
               </div>
             </div>

@@ -8,8 +8,8 @@ const GalleryPage: React.FC = () => {
       {/* Hero Section */}
       <section 
         className="py-20 bg-cover bg-center relative"
-        style={{ 
-          backgroundImage: 'url(https://images.pexels.com/photos/4344751/pexels-photo-4344751.jpeg)'
+        style={{ height: '400px',
+          backgroundImage: 'url(https://images.pexels.com/photos/30532059/pexels-photo-30532059/free-photo-of-majestic-hassan-tower-in-rabat-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
