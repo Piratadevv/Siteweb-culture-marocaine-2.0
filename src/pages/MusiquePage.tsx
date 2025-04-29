@@ -44,12 +44,12 @@ const MusiquePage: React.FC = () => {
           </p>
           <div className="grid gap-4 mt-4">
             <div className="border-l-4 border-amber-600 pl-4">
-              <img src="https://static.latribune.fr/full_width/1005943/ceremonie-ouverture-gnaoua-festival.jpg" alt="Festival Gnaoua" className="w-full w-[500px] h-[200px] object-cover rounded-lg mb-2" />
+              <img src="https://maroc-diplomatique.net/wp-content/uploads/2019/06/Festival-Gnaoua.png" alt="Festival Gnaoua" className=" w-[500px] h-[200px] object-cover rounded-lg mb-2" />
               <h4 className="font-medium text-lg">le Festival Gnaoua</h4>
               <p className="text-gray-600">Juin - Place du village</p>
             </div>
             <div className="border-l-4 border-amber-600 pl-4">
-            <img src="https://www.vh.ma/wp-content/uploads/2025/02/Musique-Andalouse.jpg" alt="Festival Gnaoua" className="w-full w-[500px] h-[200px] object-cover rounded-lg mb-2" />
+            <img src="https://www.vh.ma/wp-content/uploads/2025/02/Musique-Andalouse.jpg" alt="Festival Gnaoua" className=" w-[500px] h-[200px] object-cover rounded-lg mb-2" />
               <h4 className="font-medium text-lg">Nuits des Traditions Musicales</h4>
               <p className="text-gray-600">Août - Théâtre en plein air</p>
             </div>
