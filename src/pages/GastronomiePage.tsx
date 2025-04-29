@@ -6,9 +6,9 @@ const GastronomiePage: React.FC = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section 
-        className="py-20 bg-cover bg-center relative"
-        style={{ 
-          backgroundImage: 'url(https://images.pexels.com/photos/5409015/pexels-photo-5409015.jpeg)'
+        className="py-20 bg-cover bg-center relative "
+        style={{ height: '400px',
+          backgroundImage: 'url(https://i0.wp.com/www.luxeradio.ma/wp-content/uploads/2016/05/GAS-COMPETITIVITE-GASTRONOMIE-MAROCAINE-030516.jpg?fit=1798%2C1000&ssl=1)'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -53,7 +53,7 @@ const GastronomiePage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-64">
                 <img 
-                  src="https://images.pexels.com/photos/7474372/pexels-photo-7474372.jpeg"
+                  src="https://images.pexels.com/photos/23025188/pexels-photo-23025188/free-photo-of-woman-eating-meal-in-handmade-bowl.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Tajine traditionnel"
                   className="w-full h-full object-cover"
                 />
@@ -70,7 +70,7 @@ const GastronomiePage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-64">
                 <img 
-                  src="https://images.pexels.com/photos/6275187/pexels-photo-6275187.jpeg"
+                  src="https://img.mesrecettesfaciles.fr/2024-01/le-couscous-marocain-jyw-1200.webp"
                   alt="Couscous royal"
                   className="w-full h-full object-cover"
                 />
@@ -87,7 +87,7 @@ const GastronomiePage: React.FC = () => {
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="h-64">
                 <img 
-                  src="https://images.pexels.com/photos/4193830/pexels-photo-4193830.jpeg"
+                  src="https://www.riadnayanour.com/wp-content/uploads/2023/11/patisserie-marrakech-1140x628.jpg"
                   alt="Pâtisseries marocaines"
                   className="w-full h-full object-cover"
                 />
@@ -136,7 +136,7 @@ const GastronomiePage: React.FC = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/5529549/pexels-photo-5529549.jpeg"
+                src="https://www.riadnayanour.com/wp-content/uploads/2023/11/la-patisserie-marrakech.jpg"
                 alt="Service du thé traditionnel"
                 className="w-full h-96 object-cover"
               />
