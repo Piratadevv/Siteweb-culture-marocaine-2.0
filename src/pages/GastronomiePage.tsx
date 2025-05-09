@@ -3,7 +3,7 @@ import SectionTitle from '../components/ui/SectionTitle';
 
 const GastronomiePage: React.FC = () => {
   return (
-    <div className="pt-24">
+    <div className="-mt-[30px] pt-24">
       {/* Hero Section */}
       <section 
         className="py-20 bg-cover bg-center relative "
@@ -146,11 +146,11 @@ const GastronomiePage: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-majorelle-blue">
+      <section className="py-16  bg-white text-">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white">
-            <h2 className="text-3xl font-serif font-bold mb-6">Découvrez nos ateliers de cuisine</h2>
-            <p className="text-lg mb-8">
+            <h2 className="text-3xl text-[#1f283b] font-serif font-bold mb-6">Découvrez nos ateliers de cuisine</h2>
+            <p className="text-lg text-[#1f283b] mb-8">
               Apprenez à préparer les plats traditionnels marocains avec nos chefs expérimentés
             </p>
             <button className="px-8 py-3 bg-terracotta hover:bg-terracotta/90 text-white rounded-full transition-colors">

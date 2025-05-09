@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import mapmar from '../../assets/images/mapmar.jpg'; 
+import mapImage from '../../images/mapmar.jpg';
 // Heritage site data
 interface HeritageSite {
   id: number;
@@ -45,11 +45,21 @@ const heritageSites: HeritageSite[] = [
     image: 'https://images.pexels.com/photos/20895317/pexels-photo-20895317/free-photo-of-bazaar-in-city-in-evening.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description: 'Un jardin botanique enchanteur créé par le peintre français Jacques Majorelle, plus tard acquis par Yves Saint Laurent.',
     location: 'Marrakech',
-    latitude: 31.112,
-    longitude: -8.0027
+    latitude: 31.412,
+    longitude: -7.89
+  },
+  {
+    id: 5,
+    name: 'Caves of Hercules',
+    image: 'https://images.unsplash.com/photo-1682972443796-1da80df666f3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description: 'Un jardin botanique enchanteur créé par le peintre français Jacques Majorelle, plus tard acquis par Yves Saint Laurent.',
+    location: 'Tanger',
+    latitude: 34.7912,
+    longitude: -7.292027
   }
+  
 ];
-
+ 
 const HeritageMap: React.FC = () => {
   const [selectedSite, setSelectedSite] = useState<HeritageSite | null>(null);
   
@@ -61,7 +71,7 @@ const HeritageMap: React.FC = () => {
           <h3 className="text-xl font-serif font-bold mb-4">Carte du patrimoine</h3>
           <div className="flex-grow relative bg-slate-200 rounded-lg overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
-            <img src="dist\assets\images\mapmar.jpg" alt="Map" />
+            <img src={mapImage} alt="Map" />
 
 
               

@@ -61,11 +61,11 @@ const craftCategories = [
 
 const ArtisanatPage: React.FC = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-24 ">
       {/* Hero Section */}
       <section 
-        className="py-20 bg-cover bg-center relative"
-        style={{ 
+        className="py-20  bg-cover bg-center relative "
+        style={{ marginTop: '-30px',
           backgroundImage: 'url(https://images.unsplash.com/photo-1721508490084-1b1de5b230d4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
         }}
       >
@@ -149,13 +149,13 @@ const ArtisanatPage: React.FC = () => {
       ))}
 
       {/* Artisan Stories Section */}
-      <section className="py-16 bg-majorelle-blue">
-        <div className="container mx-auto px-4">
+      <section className=" text-grey py-16 bg-blue-50">
+        <div className=" container mx-auto px-4">
           <SectionTitle 
             title="Témoignages d'artisans" 
             subtitle="Découvrez les histoires et le savoir-faire des maîtres artisans marocains"
             centered={true}
-            light={true}
+            light={false}
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

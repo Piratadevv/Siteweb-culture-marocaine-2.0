@@ -4,7 +4,7 @@ import CultureGallery from '../components/ui/CultureGallery';
 
 const GalleryPage: React.FC = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-24 -mt-[30px]">
       {/* Hero Section */}
       <section 
         className="py-20 bg-cover bg-center relative"

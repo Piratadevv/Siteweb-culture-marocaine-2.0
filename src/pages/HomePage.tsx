@@ -171,7 +171,7 @@ const HomePage: React.FC = () => {
           backgroundImage: 'url(https://images.pexels.com/photos/4553373/pexels-photo-4553373.jpeg)'
         }}
       >
-        <div className="absolute inset-0 bg-majorelle-blue bg-opacity-85"></div>
+        <div className="absolute inset-0 bg-blue-200 bg-opacity-85"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <SectionTitle 

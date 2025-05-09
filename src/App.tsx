@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
+import ScrollToTop from './components/ui/ScrollToTop.jsx';
 
 // Layout components
 import Header from './components/layout/Header';
@@ -19,7 +20,14 @@ function App() {
   return (
     <LanguageProvider>
       <Router>
-        <div className="flex flex-col min-h-screen bg-cream">
+        <ScrollToTop />
+        <div
+          className="flex flex-col min-h-screen"
+          style={{
+            background:
+              'linear-gradient(to bottom, rgb(241, 241, 241) 0px, rgb(132, 138, 146) 80px)',
+          }}
+        >
           <Header />
           <main className="flex-grow">
             <Routes>

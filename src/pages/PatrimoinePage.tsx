@@ -4,7 +4,7 @@ import HeritageMap from '../components/ui/HeritageMap';
 
 const PatrimoinePage: React.FC = () => {
   return (
-    <div className="pt-24">
+    <div className="-mt-[30px] pt-24">
       {/* Hero Section */}
       <section 
         className="py-20 bg-cover bg-center relative"
